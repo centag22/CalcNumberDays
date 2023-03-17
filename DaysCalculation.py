@@ -9,14 +9,15 @@ def days_unit(number_of_days):
         return "Number of days should not be zero it must be a positive number"
 
 def validate_and_execute():
-    print( type(user_input))
-    if user_input.isdigit() or user_input.isdecimal():
+    print(user_input)
+    try:
         user_input_number = float(user_input)
         days_calculations = days_unit(user_input_number)
         print(days_calculations)
-
-    else:
+    except:
         print("your input is invalid,dont ruin my program")
+
+
 user_input = ""
 while user_input != "exit":
     user_input = input("Hey user,enter a number of days to be converted to hours !\n")
