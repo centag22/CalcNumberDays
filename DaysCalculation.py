@@ -1,3 +1,5 @@
+#programe to calculate unit of time in days#
+
 # Declaring variables
 
 calculation_time_unit = 24
